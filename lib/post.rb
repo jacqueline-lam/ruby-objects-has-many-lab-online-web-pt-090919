@@ -8,6 +8,7 @@ class Post
     @@all << self #needed to display all posts
   end
   
+  # class method to return array of all song instances created
   def self.all #needed to display all posts
     @@all 
   end
