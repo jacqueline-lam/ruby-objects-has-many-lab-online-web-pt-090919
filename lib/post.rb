@@ -4,7 +4,7 @@ class Post
   @@all = [] #class variable set to an array
   
   def initialize(title)
-    @title = title
+    @title = title #instance has a title
     @@all << self #needed to display all posts
   end
   
@@ -13,10 +13,10 @@ class Post
     @@all 
   end
   
-  def author_name #name of author
-    if self.author
+  def author_name 
+    if self.author #post knows name of author
       self.author.name
-    else
+    else #returns nil if post doesn't have author
       self.author
     end
   end
