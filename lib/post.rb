@@ -1,7 +1,7 @@
 class Post
   attr_accessor :title, :author
   
-  @@all = []
+  @@all = [] #class variable set to an array
   
   def initialize(title)
     @title = title
